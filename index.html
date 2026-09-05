@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>AxionOS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body
+  style="background-image: url(./cosmic.avif); background-size: cover; color: #ffffff; font-family: Helvetica, Noto Sans, sans-serif; overflow: hidden; margin: 0; padding: 0; height: 100vh; width: 100vw;">
+
+  <div
+    style="border: solid; width: 500px; border-radius: 12px; padding: 15px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+
+    <h1 style="margin: 4px;">Welcome to <strong>AxionOS</strong></h1>
+    <h2 style="margin: 4px;">Introduction</h2>
+    <p>Hello, I am Omadbek, the founder of AxionOS.</p>
+    <p>I am 15 years old, and mostly interested in Tech/Science</p>
+
+    <p>I am a music lover! Check out my <a style="color: #38bdf8"
+        href="https://open.spotify.com/user/31dvaq4md6loyy2j73sased2yz5a?si=63a444d908ed4d04"
+        target="_blank">Spotify</a>
+      profile.</p>
+
+
+    <h3 style="margin: 4px;">My Social Media Profiles:</h3>
+    <a href="https://www.github.com/Akkorpy" target="_blank" style="color: #38bdf8">GitHub</a><br>
+    <a href="https://t.me/akkorpy" target="_blank" style="color: #38bdf8">Telegram</a><br><br>
+
+  </div>
+
+  <div
+    style="display: flex; justify-content: space-around; position: absolute; width: 100%; backdrop-filter: blur(10px); background-color: rgba(23, 70, 158, 0.125); color: #ffffff;">
+    <p>
+      AxionOS
+    </p>
+    <p>
+      Tashkent Sunny +32°C
+    </p>
+    <p id="time-date">
+      5/09/2026 3:43 PM
+    </p>
+  </div>
+
+  <script>
+
+    function updateTimeDate() {
+      var currentDate = new Date().toLocaleString();
+      var timeDateElement = document.querySelector("#time-date");
+      timeDateElement.innerHTML = currentDate;
+    }
+    setInterval(updateTimeDate, 1000);
+
+  </script>
+</body>
+
+</html>
