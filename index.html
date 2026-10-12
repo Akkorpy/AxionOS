@@ -11,7 +11,7 @@
 
 <body>
 
-  <div id="welcome-screen" class="window">
+  <div id="welcome" class="window">
 
     <header id="welcome-header" class="window-header">
 
@@ -47,7 +47,44 @@
     <p id="time-date"></p>
   </div>
 
-  <script src="script.js"></script>
+  <div id="desktopApps" style="padding-top: 64px; padding-left: 16px;">
+
+    <div onclick="handleIconTap(this)">
+      <img src="./Notes_app_icon.png" style="width: 64px; height: 64px;">
+    </div>
+
+  </div>`
+
+  <div class="window" id="notes" style="display: none;">
+    <div class="window-header" id="notes-header">
+      <div class="closebutton" id="notesclose">
+      </div>
+
+      <p class="window-title">Cosmic Journal</p>
+    </div>
+
+    <div class="window-content">
+      <aside class="sidebar">
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#quotes" class="nav-link-active">Quotes</a></li>
+            <li><a href="#logs" class="nav-link">Mission logs</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <div id="quotes" class="content-section">
+          <h2>Quotes</h2>
+        </div>
+
+        <div id="logs" class="content-section" style="display: none;">
+          <h2>Mission logs</h2>
+        </div>
+      </main>
+
+
+      <script src="script.js"></script>
 </body>
 
 </html>

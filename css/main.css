@@ -1,5 +1,5 @@
 body {
-	background-image: url(../cosmic.avif);
+	background-image: url(../download.gif);
 	background-size: cover;
 	color: #ffffff;
 	font-family: Helvetica, Noto Sans, sans-serif;
@@ -81,5 +81,56 @@ a {
 	left: 15px;
 	top: 50%;
 	transform: translateY(-50%);
+	z-index: 1;
 	margin: 0;
+}
+
+.window-title {
+	margin: 0;
+	pointer-events: none;
+}
+
+#notes {
+	width: 650px;
+}
+
+.window-content {
+	display: flex;
+	flex-direction: row;
+	height: calc(100% - 30px);
+}
+
+.sidebar {
+	width: 100px;
+	background-color: rgba(10, 15, 30, 0.6);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 15px 10px;
+}
+
+.nav-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-link {
+	display: block;
+	padding: 10px 12px;
+	margin-bottom: 5px;
+	border-radius: 6px;
+	color: #a0aec0;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link-active {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+}
+
+.main-content {
+	flex: 1;
+	padding: 20px;
+	overflow-y: auto;
 }
