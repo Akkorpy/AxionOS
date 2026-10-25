@@ -134,3 +134,171 @@ a {
 	padding: 20px;
 	overflow-y: auto;
 }
+
+#contacts {
+	width: 550px;
+}
+
+#my-form input,
+#my-form textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	color: white;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 8px;
+	font-family: inherit;
+	font-size: 14px;
+	outline: none;
+}
+
+#my-form textarea {
+	height: 140px;
+	resize: none;
+}
+
+#my-form input:focus,
+#my-form textarea:focus {
+	border-color: white;
+	background: rgba(255, 255, 255, 0.15);
+}
+
+#my-form ::placeholder {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#my-form button {
+	padding: 10px 20px;
+	background: rgba(255, 140, 0, 0.35);
+	color: white;
+	border: 1px solid rgba(255, 140, 0, 0.8);
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+#my-form button:hover {
+	background: rgba(255, 140, 0, 0.6);
+}
+
+#my-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#my-form label {
+	margin-top: 10px;
+}
+
+#my-form button {
+	align-self: flex-start;
+	margin-top: 14px;
+}
+
+#aboutme {
+	width: 500px;
+}
+
+#aboutme img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	align-self: center;
+}
+
+#aboutme header {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+#aboutme-content {
+	padding: 20px;
+	text-align: center;
+}
+
+.badges {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	flex-wrap: wrap;
+	margin-bottom: 16px;
+}
+
+.badge {
+	position: relative;
+	padding: 4px 12px;
+	font-size: 12px;
+	background-color: rgba(255, 100, 0, 0.35);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 12px;
+}
+
+#aboutme h2 {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+#aboutme h2::before,
+#aboutme h2::after {
+	content: "";
+	flex: 1;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+#aboutme .main-content {
+	background-color: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 12px;
+	padding: 14px 16px;
+	text-align: left;
+}
+
+#aboutme .main-content h3 {
+	margin: 0 0 4px;
+	font-size: 14px;
+	opacity: 0.8;
+}
+
+#aboutme .main-content p {
+	margin: 0 0 12px;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+#aboutme .socials {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin-top: 16px;
+}
+
+#aboutme .socials a {
+	width: 38px;
+	height: 38px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background: rgba(255, 100, 0, 0.15);
+	border: 1px solid rgba(255, 100, 0, 0.3);
+	transition: background 0.2s, border-color 0.2s;
+}
+
+#aboutme .socials a:hover {
+	background: rgba(255, 100, 0, 0.45);
+	border-color: rgba(255, 150, 80, 0.8);
+}
+
+#aboutme .socials img {
+	width: 18px;
+	height: 18px;
+	margin: 0;
+	border-radius: 0;
+	opacity: 0.9;
+}

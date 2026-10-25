@@ -24,15 +24,11 @@
       <p>Hello, I am Omadbek, the founder of AxionOS.</p>
       <p>I am 15 years old, and mostly interested in Tech/Science</p>
 
-      <p>I am a music lover! Check out my <a
+      <p style="padding-bottom: 8px;">I am a music lover! Check out my <a
           href="https://open.spotify.com/user/31dvaq4md6loyy2j73sased2yz5a?si=63a444d908ed4d04"
           target="_blank">Spotify</a>
         profile.</p>
 
-
-      <h3>My Social Media Profiles:</h3>
-      <a href="https://www.github.com/Akkorpy" target="_blank">GitHub</a><br>
-      <a href="https://t.me/akkorpy" target="_blank">Telegram</a><br><br>
     </div>
 
   </div>
@@ -42,18 +38,30 @@
       AxionOS
     </p>
     <p>
-      Tashkent Sunny +32°C
+      Tashkent Smoke +25°C
     </p>
     <p id="time-date"></p>
   </div>
 
   <div id="desktopApps" style="padding-top: 64px; padding-left: 16px;">
 
-    <div onclick="handleIconTap(this)">
+    <div id="notes-icon">
       <img src="./Notes_app_icon.png" style="width: 64px; height: 64px;">
     </div>
 
-  </div>`
+    <div id="contacts-icon">
+      <img src="./contactapp.png" style="width: 64px; height: 64px; padding-top: 3px;">
+    </div>
+
+    <div id="aboutme-icon">
+      <img src="./aboutmeapp.png" style="width: 64px; height: 64px; padding-top: 3px;">
+    </div>
+
+    <div id="weather-icon">
+      <img src="./weather.jpeg" style="width: 64px; height: 64px; padding-top: 3px;">
+    </div>
+
+  </div>
 
   <div class="window" id="notes" style="display: none;">
     <div class="window-header" id="notes-header">
@@ -82,9 +90,97 @@
           <h2>Mission logs</h2>
         </div>
       </main>
+    </div>
+  </div>
 
+  <div class="window" id="contacts" style="display: none;">
+    <div class="window-header" id="contacts-header">
+      <div class="closebutton" id="contactsclose">
+      </div>
 
-      <script src="script.js"></script>
+      <p class="window-title">Contacts</p>
+    </div>
+    <div class="window-content">
+
+      <main class="main-content">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or suggestions, feel free to reach out to me using the form below:</p>
+        <form id="my-form" action="https://formspree.io/f/xrpedraj" method="POST">
+          <label for="email">Your email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <label for="message">Your message:</label>
+          <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <p id="form-status"></p>
+      </main>
+    </div>
+  </div>
+
+  <div class="window" id="aboutme" style="display: none;">
+    <div class="window-header" id="aboutme-header">
+      <div class="closebutton" id="aboutmeclose">
+      </div>
+
+      <p class="window-title">About Me</p>
+    </div>
+    <div id="aboutme-content">
+
+      <header class="header">
+        <img src="./icon.jpg" alt="Profile Image">
+        <h2>Akkorpy</h2>
+      </header>
+
+      <div class="badges">
+        <span class="badge">founder of AxionOS</span>
+        <span class="badge">beginner coder</span>
+        <span class="badge">future cybersecurity expert</span>
+      </div>
+
+      <main class="main-content">
+        <p>Hello! I'm Akkorpy (Omadbek) and I'm a 15-year-old high school student with a passion for technology and
+          cybersecurity. During the challenge, I've been working on some anotherexciting projects such as NovaBot and my
+          personal website. I am interested in many computer sciense areas, so it is hard to chose just one, but,
+          cybersecurity seems to be my main focus.</p>
+        <p>My goal is to become a professional in the field of cybersecurity and contribute to the development of secure
+          systems. In addition, I aim to apply to universities with strong cybersecurity programs (MIT, Stanford, etc.).
+        </p>
+      </main>
+
+      <footer class="socials">
+        <a href="https://t.me/akkorpy" target="_blank" title="Telegram">
+          <img src="https://api.iconify.design/ph/telegram-logo.svg?color=white" alt="Telegram">
+        </a>
+        <a href="https://github.com/akkorpy" target="_blank" title="GitHub">
+          <img src="https://api.iconify.design/lucide/github.svg?color=white" alt="GitHub">
+        </a>
+        <a href="https://instagram.com/akkorpy" target="_blank" title="Instagram">
+          <img src="https://api.iconify.design/lucide/instagram.svg?color=white" alt="Instagram">
+        </a>
+        <a href="https://akkorpy.github.io/Website/" target="_blank" title="Portfolio">
+          <img src="https://api.iconify.design/lucide/globe.svg?color=white" alt="Portfolio">
+        </a>
+      </footer>
+    </div>
+  </div>
+
+  <div class="window" id="weather" style="display: none;">
+    <div class="window-header" id="weather-header">
+      <div class="closebutton" id="weatherclose">
+      </div>
+
+      <p class="window-title">Weather</p>
+    </div>
+    <div class="window-content">
+
+      <main class="main-content">
+        <h2>Weather app is on development</h2>
+        <p>Current weather data will be displayed here once the app is complete.</p>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
