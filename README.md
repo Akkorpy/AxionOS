@@ -5,14 +5,14 @@
  
 Hi guys! This is an experimental WebOS project focused on creating a basic desktop interface inside the browser. I put a lot of effort and time to this project and learned a lot during the process. The main challenges were analysed and solved with Claude and Gemini and we've done a lot of debugging (nearly half of the time the project took was debugging, pfff...). So, after 16 hours of work I present you AxionOS!
 
-<img width="1607" height="909" alt="image" src="https://github.com/user-attachments/assets/3e16c2e3-a14e-46bf-9bcb-22a8e7eaa8ed" />
+<img width="1595" height="908" alt="image" src="https://github.com/user-attachments/assets/b717537a-7486-4c1f-8665-0e0c2ab757b9" />
 
 ---
 
 ## Features
 - Draggable, closable windows
 - About Me, Contacts, Cosmic Journal and Weather (on development) apps
-- Live clock and date in the top bar (weather is static🫪)
+- Live clock and date in the top bar (weather is static)
 - Dock with app icons like in basic Windows
 
 ---
@@ -36,7 +36,7 @@ Open `index.html` in a browser and that's it. Easy, right?
 
 ## Credits & Acknowledgements
 
-I used Claude and Gemini as assistants for writing and debugging parts of the HTML/CSS/JS, fixing layout issues, and explaining how things work. The concept, design sketches, structure, content and final decisions are mine. I mean that style isn't AI generrated or something like that, I generated ideas and Claude sometimes helped me to realise them. AxionOS's current design is inspired my some kind of Linux system and I love blur feature, so every window has it. Blur also under;ines background gif as that is skyfall. Every buttons are orange cuz it's almost my favourite colour. I hope I answered all the questions relating to AI. This project was mainly for education so, yeah, I used AI a bit more than I should (hope you won't judge me strict for that🫡). However, I've learnt a lot of new info and skills and it was really funny to understand the code I've written just 5 minutes ago and to analyze it (honestly, analyzing was not (⁠ー⁠_⁠ー⁠゛⁠)).
+I used Claude and Gemini as assistants for writing and debugging parts of the HTML/CSS/JS, fixing layout issues, and explaining how things work. The concept, design sketches, structure, content and final decisions are mine. I mean that style isn't fully AI generrated or something like that, I generated ideas and Claude sometimes helped me to realise them. AxionOS's current design is inspired my some kind of Linux system and I love blur feature, so every window has it. Blur also under;ines background gif as that is skyfall. Every buttons are orange cuz it's almost my favourite colour. I hope I answered all the questions relating to AI. This project was mainly for education. I've learnt a lot of new info and skills and it was really funny to understand the code I've written just 5 minutes ago and to analyze it (honestly, analyzing was not (⁠ー⁠_⁠ー⁠゛⁠)).
 
 ---
 
