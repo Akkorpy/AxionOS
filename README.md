@@ -1,9 +1,8 @@
 <div align="center">
-<strong>AxionOS</strong>
+<h1>AxionOS</h1>
 </div>
-
----
-
+ <br>
+ 
 Hi guys! This is an experimental WebOS project focused on creating a basic desktop interface inside the browser. I put a lot of effort and time to this project and learned a lot during the process. The main challenges were analysed and solved with Claude and Gemini and we've done a lot of debugging (nearly half of the time the project took was debugging, pfff...). So, after 16 hours of work I present you AxionOS!
 
 <img width="1607" height="909" alt="image" src="https://github.com/user-attachments/assets/3e16c2e3-a14e-46bf-9bcb-22a8e7eaa8ed" />
@@ -19,11 +18,12 @@ Hi guys! This is an experimental WebOS project focused on creating a basic deskt
 ---
 
 ## Technologies
+
 | Technology | Description |
-|---|---|
-| HTML | Structure of the web page |
-| CSS | Visual appearance and style |
-| JavaScript | Interactivity and logic |
+| :--- | :--- |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" width="15" height="15"> HTML | Structure of the web page |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" width="15" height="15"> CSS | Visual appearance and style |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="15" height="15"> JavaScript | Interactivity and logic |
 | Formspree service | Form processing |
 | GitHub Pages | Website hosting |
 
@@ -37,3 +37,14 @@ Open `index.html` in a browser and that's it. Easy, right?
 ## Credits & Acknowledgements
 
 I used Claude and Gemini as assistants for writing and debugging parts of the HTML/CSS/JS, fixing layout issues, and explaining how things work. The concept, design sketches, structure, content and final decisions are mine. This project was mainly for education so I used AI more than I should (hope you won't judge me strict for that🫡). However, I've learnt a lot of new info and skills and it was really funny to understand the code I've written just 5 minutes ago and to analyze it (honestly, analyzing was not (⁠ー⁠_⁠ー⁠゛⁠)).
+
+---
+
+<div align="center">
+ <h3>Version 0.1.1 beta</h3>
+  
+<img width="480" height="480" alt="2344" src="https://github.com/user-attachments/assets/2fe94832-5b66-478b-83e7-6e6fa274d0d1" />
+
+  <br>
+  Thanks!
+</div>
