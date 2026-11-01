@@ -211,6 +211,9 @@ initializeWindow("notes")
 initializeWindow("contacts")
 initializeWindow("aboutme")
 initializeWindow("weather")
+initializeWindow("gallery")
+initializeWindow("calculator")
+initializeWindow("music")
 
 var contactForm = document.querySelector("#my-form");
 var formStatus = document.querySelector("#form-status");
@@ -235,4 +238,94 @@ contactForm.addEventListener("submit", async function (event) {
 	setTimeout(function () {
 		formStatus.textContent = "";
 	}, 3000);
+});
+
+const calcDisplay = document.getElementById('calc-display');
+let calcExpr = '';
+
+document.querySelectorAll('#calc-buttons button').forEach(btn => {
+	btn.addEventListener('click', () => {
+		const v = btn.dataset.v;
+		if (calcExpr === 'Error') calcExpr = '';
+		if (v === 'C') calcExpr = '';
+		else if (v === 'back') calcExpr = calcExpr.slice(0, -1);
+		else if (v === '=') {
+			try {
+				if (/^[0-9+\-*/.() ]+$/.test(calcExpr)) {
+					const r = Function('return ' + calcExpr)();
+					calcExpr = Number.isFinite(r) ? String(r) : 'Error';
+				}
+			} catch { calcExpr = 'Error'; }
+		} else calcExpr += v;
+		calcDisplay.value = calcExpr || '0';
+	});
+});
+
+const tracks = [
+	{ title: 'Gabriela', artist: 'KATSEYE', src: './music/Gabriela.mp3', cover: './covers/Gabriela - cover.jpg' },
+	{ title: 'Merry-Go-Round-of-Life', artist: 'Joe Hisaishi', src: './music/Merry-Go-Round-of-Life.mp3', cover: './covers/Merry-Go-Round-of-Life - cover.jpg' },
+	{ title: 'The Rumbling', artist: 'SiM', src: './music/The Rumbling.mp3', cover: './covers/The Rumbling - cover.jpeg' },
+	{ title: 'Those Eyes', artist: 'New West', src: './music/Those Eyes.mp3', cover: './covers/Those Eyes - cover.jpg' },
+];
+let current = 0;
+const audio = document.getElementById('audio');
+const playBtn = document.getElementById('play-btn');
+const progress = document.getElementById('track-progress');
+const trackTitle = document.getElementById('track-title');
+const trackArtist = document.getElementById('track-artist');
+const trackCover = document.getElementById('track-cover');
+const timeCurrent = document.getElementById('time-current');
+const timeTotal = document.getElementById('time-total');
+
+function fmt(s) {
+	if (!s || isNaN(s)) return '0:00';
+	return Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
+}
+
+function loadTrack(i) {
+	current = (i + tracks.length) % tracks.length;
+	audio.src = tracks[current].src;
+	trackTitle.textContent = tracks[current].title;
+	trackArtist.textContent = tracks[current].artist;
+	trackCover.src = tracks[current].cover;
+}
+
+function togglePlay() {
+	if (audio.paused) { audio.play(); playBtn.textContent = '⏸'; }
+	else { audio.pause(); playBtn.textContent = '▶'; }
+}
+
+playBtn.addEventListener('click', togglePlay);
+
+document.getElementById('next-btn').addEventListener('click', () => {
+	loadTrack(current + 1); audio.play(); playBtn.textContent = '⏸';
+});
+
+document.getElementById('prev-btn').addEventListener('click', () => {
+	loadTrack(current - 1); audio.play(); playBtn.textContent = '⏸';
+});
+
+audio.addEventListener('timeupdate', () => {
+	progress.value = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+	timeCurrent.textContent = fmt(audio.currentTime);
+});
+
+audio.addEventListener('loadedmetadata', () => {
+	timeTotal.textContent = fmt(audio.duration);
+});
+
+audio.addEventListener('ended', () => {
+	loadTrack(current + 1); audio.play();
+});
+
+progress.addEventListener('input', () => {
+	if (audio.duration) audio.currentTime = (progress.value / 100) * audio.duration;
+});
+
+loadTrack(0);
+
+document.getElementById('musicclose').addEventListener('click', () => {
+	audio.pause();
+	audio.currentTime = 0;
+	playBtn.textContent = '▶';
 });

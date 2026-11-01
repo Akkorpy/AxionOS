@@ -302,3 +302,154 @@ a {
 	border-radius: 0;
 	opacity: 0.9;
 }
+
+#gallery {
+	width: 720px;
+}
+
+#gallery img {
+	height: 240px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 12px;
+	display: block;
+}
+
+#gallery #gallery-content {
+	max-height: 500px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	padding: 10px;
+	overflow-y: auto;
+}
+
+#gallery #gallery-content::-webkit-scrollbar {
+	width: 8px;
+}
+
+#gallery #gallery-content::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+#gallery #gallery-content::-webkit-scrollbar-thumb {
+	background: rgba(255, 140, 0, 0.8);
+	border-radius: 6px;
+}
+
+#gallery #gallery-content::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 150, 80, 0.9);
+}
+
+#calculator {
+	width: 260px;
+}
+
+#calculator-content {
+	padding: 10px;
+}
+
+#calc-display {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 12px;
+	margin-bottom: 10px;
+	font-size: 24px;
+	text-align: right;
+	color: #fff;
+	background: rgba(255, 255, 255, 0.08);
+	border: none;
+	border-radius: 10px;
+}
+
+#calc-buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 8px;
+}
+
+#calc-buttons button {
+	padding: 14px 0;
+	font-size: 18px;
+	color: #fff;
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+#calc-buttons button:hover {
+	background: rgba(255, 100, 0, 0.45);
+}
+
+#music {
+	width: 320px;
+}
+
+#music-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 16px;
+	color: #fff;
+}
+
+#track-cover {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 14px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+	margin-bottom: 14px;
+}
+
+#track-title {
+	margin: 0;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#track-artist {
+	margin: 2px 0 12px;
+	font-size: 13px;
+	opacity: 0.6;
+}
+
+#track-progress {
+	width: 100%;
+	accent-color: #ff6400;
+}
+
+#music-time {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 12px;
+	opacity: 0.6;
+}
+
+#music-controls {
+	display: flex;
+	gap: 14px;
+	margin-top: 10px;
+}
+
+#music-controls button {
+	width: 48px;
+	height: 48px;
+	font-size: 18px;
+	color: #fff;
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+#music-controls button:hover {
+	background: rgba(255, 100, 0, 0.45);
+}

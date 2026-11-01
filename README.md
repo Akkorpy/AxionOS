@@ -3,7 +3,7 @@
 </div>
  <br>
  
-Hi guys! This is an experimental WebOS project focused on creating a basic desktop interface inside the browser. I put a lot of effort and time to this project and learned a lot during the process. The main challenges were analysed and solved with Claude and Gemini and we've done a lot of debugging (nearly half of the time the project took was debugging, pfff...). So, after 16 hours of work I present you AxionOS!
+Hi guys! This is an experimental WebOS project focused on creating a basic desktop interface inside the browser. I put a lot of effort and time to this project and learned a lot during the process. The main challenges were analysed and solved with Claude and Gemini and we've done a lot of debugging (nearly half of the time the project took was debugging, pfff...). So, after 17 hours of work I present you AxionOS!
 
 <img width="1595" height="908" alt="image" src="https://github.com/user-attachments/assets/b717537a-7486-4c1f-8665-0e0c2ab757b9" />
 
@@ -11,7 +11,7 @@ Hi guys! This is an experimental WebOS project focused on creating a basic deskt
 
 ## Features
 - Draggable, closable windows
-- About Me, Contacts, Cosmic Journal and Weather (on development) apps
+- About Me, Contacts, Cosmic Journal, Calculator, Gallery, Music Player and Weather (on development) apps
 - Live clock and date in the top bar (weather is static)
 - Dock with app icons like in basic Windows
 
@@ -41,7 +41,7 @@ I used Claude and Gemini as assistants for writing and debugging parts of the HT
 ---
 
 <div align="center">
- <h3>Version 0.1.1 beta</h3>
+ <h3>Version 1.0 release</h3>
   
 <img width="480" height="480" alt="2344" src="https://github.com/user-attachments/assets/2fe94832-5b66-478b-83e7-6e6fa274d0d1" />
 

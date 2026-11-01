@@ -65,6 +65,18 @@
       <img src="./weather.jpeg" style="width: 64px; height: 64px; padding-top: 3px;">
     </div>
 
+    <div id="gallery-icon">
+      <img src="./galleryapp.png" style="width: 64px; height: 64px; padding-top: 3px;">
+    </div>
+
+    <div id="calculator-icon">
+      <img src="./calculatorapp.webp" style="width: 64px; height: 64px; padding-top: 3px; border-radius: 14px;">
+    </div>
+
+    <div id="music-icon">
+      <img src="./musicplayerapp.webp" style="width: 64px; height: 64px; padding-top: 3px; border-radius: 14px;">
+    </div>
+
   </div>
 
   <div class="window" id="notes" style="display: none;">
@@ -181,6 +193,85 @@
         <h2>Weather app is under development</h2>
         <p>Current weather data will be displayed here once the app is complete.</p>
         <img style="width: 420px; border-radius: 12px" src="./computer-nerds.gif">
+      </main>
+    </div>
+  </div>
+
+  <div class="window" id="gallery" style="display: none;">
+    <div class="window-header" id="gallery-header">
+      <div class="closebutton" id="galleryclose">
+      </div>
+
+      <p class="window-title">Gallery</p>
+    </div>
+    <div class="window-content">
+
+      <main id="gallery-content">
+        <img src="./photo1.jpg">
+        <img src="./photo2.jpg">
+        <img src="./photo3.jpg">
+        <img src="./photo4.jpg">
+        <img src="./photo5.gif">
+        <img src="./photo6.png">
+      </main>
+    </div>
+  </div>
+
+  <div class="window" id="calculator" style="display: none;">
+    <div class="window-header" id="calculator-header">
+      <div class="closebutton" id="calculatorclose"></div>
+      <p class="window-title">Calculator</p>
+    </div>
+    <div class="window-content">
+      <main id="calculator-content">
+        <input type="text" id="calc-display" value="0" readonly>
+        <div id="calc-buttons">
+          <button data-v="C">C</button>
+          <button data-v="(">(</button>
+          <button data-v=")">)</button>
+          <button data-v="/">÷</button>
+          <button data-v="7">7</button>
+          <button data-v="8">8</button>
+          <button data-v="9">9</button>
+          <button data-v="*">×</button>
+          <button data-v="4">4</button>
+          <button data-v="5">5</button>
+          <button data-v="6">6</button>
+          <button data-v="-">−</button>
+          <button data-v="1">1</button>
+          <button data-v="2">2</button>
+          <button data-v="3">3</button>
+          <button data-v="+">+</button>
+          <button data-v="0">0</button>
+          <button data-v=".">.</button>
+          <button data-v="back">⌫</button>
+          <button data-v="=">=</button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div class="window" id="music" style="display: none;">
+    <div class="window-header" id="music-header">
+      <div class="closebutton" id="musicclose"></div>
+      <p class="window-title">Music Player</p>
+    </div>
+    <div class="window-content">
+      <main id="music-content">
+        <img id="track-cover" src="./covers/cover1.jpg" alt="cover">
+        <p id="track-title">—</p>
+        <p id="track-artist"></p>
+        <input type="range" id="track-progress" value="0" min="0" max="100">
+        <div id="music-time">
+          <span id="time-current">0:00</span>
+          <span id="time-total">0:00</span>
+        </div>
+        <div id="music-controls">
+          <button id="prev-btn">⏮</button>
+          <button id="play-btn">▶</button>
+          <button id="next-btn">⏭</button>
+        </div>
+        <audio id="audio"></audio>
       </main>
     </div>
   </div>
